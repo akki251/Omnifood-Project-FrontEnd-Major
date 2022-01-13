@@ -27,7 +27,7 @@ const obs = new IntersectionObserver(
     // In the viewport
     root: null,
     threshold: 0, // when hero is outside the viewport
-    rootMargin: "-80px",
+    rootMargin: "-110px",
   }
 );
 obs.observe(hero);

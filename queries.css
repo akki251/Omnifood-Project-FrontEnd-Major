@@ -117,7 +117,7 @@
   }
 
   .main-nav {
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.37);
     position: absolute;
     height: 100vh;
     width: 100%;
@@ -142,6 +142,7 @@
     opacity: 1;
     pointer-events: auto;
     visibility: visible;
+    backdrop-filter: blur(25px);
     transform: translateX(0%);
   }
 
