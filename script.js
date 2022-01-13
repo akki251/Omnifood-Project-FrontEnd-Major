@@ -1,6 +1,9 @@
 const navBtn = document.querySelector(".btn-mobile-nav");
 const header = document.querySelector(".header");
 
+const links = document.querySelectorAll(".main-nav-link");
+console.log(links);
+
 navBtn.addEventListener("click", function () {
   // TODO: toggle check if the class is present, it removes and viceversa
   header.classList.toggle("nav-open");
@@ -16,7 +19,7 @@ const obs = new IntersectionObserver(
 
     if (ent.isIntersecting == false) {
       document.body.classList.add("sticky");
-    } else {
+    } else if (ent.isIntersecting == true) {
       document.body.classList.remove("sticky");
     }
   },
@@ -28,3 +31,9 @@ const obs = new IntersectionObserver(
   }
 );
 obs.observe(hero);
+
+for (var i = 0; i < links.length; i++) {
+  links[i].addEventListener("click", () => {
+    header.classList.remove("nav-open");
+  });
+}

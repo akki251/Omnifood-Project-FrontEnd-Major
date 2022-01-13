@@ -129,6 +129,7 @@
     transform: translateX(100%);
     /* HIDE  */
     opacity: 0;
+
     /* HIDE IT VISUALLY */
     /* MAKE UNACCESSIBLE TO MOUSE AND KEYBOARD */
     pointer-events: none;
