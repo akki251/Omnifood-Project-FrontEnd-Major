@@ -130,6 +130,7 @@
     /* HIDE  */
     opacity: 0;
 
+  
     /* HIDE IT VISUALLY */
     /* MAKE UNACCESSIBLE TO MOUSE AND KEYBOARD */
     pointer-events: none;
@@ -143,7 +144,7 @@
     opacity: 1;
     pointer-events: auto;
     visibility: visible;
-    backdrop-filter: blur(25px);
+
     transform: translateX(0%);
   }
 
@@ -164,6 +165,11 @@
   .main-nav-link:link,
   .main-nav-link:visited {
     font-size: 3rem;
+  }
+
+  .effect {
+    background-color: rgba(255, 255, 255, 0.39);
+    backdrop-filter: blur(25px);
   }
 }
 
@@ -264,10 +270,6 @@
 
   .section-how {
     padding-bottom: 0rem;
-  }
-
-  .section-meals {
-    padding-top: 3.2rem;
   }
 
   .gallery {

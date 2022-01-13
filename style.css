@@ -17,7 +17,6 @@ body {
   font-family: "Rubik", sans-serif;
   /* this only works if there is nothing position absolute in relation to body  */
   overflow-x: hidden;
-  scroll-behavior: smooth;
 }
 
 body::-webkit-scrollbar {
@@ -429,7 +428,6 @@ body::-webkit-scrollbar-thumb {
 
 .section-pricing {
   padding: 9.6rem 0 0rem 0;
-
 }
 
 .plan-stater {
